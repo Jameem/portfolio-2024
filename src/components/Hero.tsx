@@ -19,7 +19,7 @@ export const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Jameem</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop things for the web
+            I develop things for the web.
           </p>
           <br className='sm:block hidden' />
           <div className='flex gap-5 '>
