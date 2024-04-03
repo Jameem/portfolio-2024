@@ -1,4 +1,4 @@
-import { MutableRefObject, useRef, useState } from 'react';
+import { MutableRefObject, Suspense, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
@@ -7,6 +7,7 @@ import { Earth } from './canvas';
 import { slideIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc/SectionWrapper';
 import { Canvas } from '@react-three/fiber';
+import CanvasLoader from './Loader';
 
 const ContactWrapper = () => {
   const formRef: MutableRefObject<HTMLFormElement | null> = useRef(null);
@@ -136,7 +137,9 @@ const ContactWrapper = () => {
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         <Canvas>
-          <Earth />
+          <Suspense fallback={<CanvasLoader />}>
+            <Earth />
+          </Suspense>
         </Canvas>
       </motion.div>
     </div>
