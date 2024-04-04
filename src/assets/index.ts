@@ -1,3 +1,4 @@
+import resume from './resume.pdf';
 import logo from './logo.png';
 import backend from './backend.png';
 import creator from './creator.png';
@@ -93,4 +94,5 @@ export {
   covid,
   slack,
   donatecrypto,
+  resume,
 };

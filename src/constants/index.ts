@@ -37,6 +37,7 @@ import {
   chat,
   donatecrypto,
   amazon,
+  instagram,
   git,
 } from '../assets';
 
@@ -445,7 +446,7 @@ const projects = [
         color: 'blue-text-gradient',
       },
     ],
-    image: slack,
+    image: instagram,
     source_code_link: 'https://github.com/Jameem/instagram-clone',
   },
 ];

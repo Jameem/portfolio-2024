@@ -2,6 +2,7 @@ import { FaTwitter } from 'react-icons/fa';
 import { styles } from '../styles';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { TbFileCv } from 'react-icons/tb';
+import { resume } from '../assets';
 
 export const Hero = () => {
   return (
@@ -48,7 +49,7 @@ export const Hero = () => {
             <TbFileCv
               className='cursor-pointer'
               size={30}
-              onClick={() => window.open('src/assets/resume.pdf', '_blank')}
+              onClick={() => window.open(resume, '_blank')}
               title='Resume'
             />
           </div>

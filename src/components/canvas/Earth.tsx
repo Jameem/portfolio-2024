@@ -47,7 +47,7 @@ export function Earth() {
 
   return (
     <>
-      <directionalLight color='0xffffff' position={[-2, 0.5, 1.5]} />
+      <directionalLight color='#fff' position={[-2, 0.5, 1.5]} />
       <Stars
         radius={250}
         depth={60}
