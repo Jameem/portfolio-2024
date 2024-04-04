@@ -66,16 +66,16 @@ const services = [
     icon: backend,
   },
   {
-    title: 'Frontend Developer',
+    title: 'Frontend Engineer',
     icon: web,
   },
   {
-    title: 'React Developer',
+    title: 'React Specialist',
     icon: mobile,
   },
 
   {
-    title: 'TypeScript Developer',
+    title: 'TypeScript Programmer',
     icon: creator,
   },
 ];
