@@ -84,22 +84,22 @@ const technologies = [
   {
     name: 'React JS',
     icon: reactjs,
-    map: mercury,
+    map: mars,
   },
   {
     name: 'TypeScript',
     icon: typescript,
-    map: venus,
+    map: earth,
   },
   {
     name: 'JavaScript',
     icon: javascript,
-    map: earth,
+    map: saturn,
   },
   {
     name: 'Node JS',
     icon: nodejs,
-    map: mars,
+    map: mercury,
   },
   {
     name: 'Git',
@@ -109,7 +109,7 @@ const technologies = [
   {
     name: 'Redux Toolkit',
     icon: redux,
-    map: saturn,
+    map: venus,
   },
   {
     name: 'MobX',
