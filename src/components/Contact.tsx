@@ -93,7 +93,7 @@ const ContactWrapper = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder='Please enter your name'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               required
             />
@@ -106,7 +106,7 @@ const ContactWrapper = () => {
               value={form.email}
               onChange={handleChange}
               required
-              placeholder="What's your email address?"
+              placeholder='Please enter your email address'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
