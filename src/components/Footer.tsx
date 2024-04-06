@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react';
 import {
+  getVisitorDetails,
+  isItMyIPAddress,
+  setVisitorInfo,
+} from '../utils/visitor-count';
+import {
   getVisitorCount,
   hasVisitorSession,
   setVisitorCount,
@@ -13,6 +18,8 @@ export function Footer() {
 
   useEffect(() => {
     async function visitor() {
+      const isMyIp = await isItMyIPAddress();
+
       await signIn();
 
       const count = await getVisitorCount();
@@ -20,8 +27,13 @@ export function Footer() {
         setVisitCount(+count);
       }
 
-      if (!hasVisitorSession() && count) {
+      if (!isMyIp && !hasVisitorSession() && count) {
         await setVisitorCount(+count);
+      }
+
+      if (!isMyIp && !hasVisitorSession()) {
+        const visitor = await getVisitorDetails();
+        await setVisitorInfo(visitor);
       }
     }
 
