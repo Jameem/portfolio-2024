@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import { Canvas, useLoader } from '@react-three/fiber';
 import {
   Decal,
@@ -8,7 +7,6 @@ import {
   useTexture,
 } from '@react-three/drei';
 
-import CanvasLoader from '../Loader';
 import { TextureLoader } from 'three';
 
 interface BallProps {
@@ -45,10 +43,8 @@ const Ball = (props: BallProps) => {
 export const BallCanvas = ({ icon, map }: BallCanvasProps) => {
   return (
     <Canvas dpr={[1, 2]}>
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} map={map} />
-      </Suspense>
+      <OrbitControls enableZoom={false} />
+      <Ball imgUrl={icon} map={map} />
 
       <Preload all />
     </Canvas>
