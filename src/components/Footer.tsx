@@ -31,10 +31,8 @@ export function Footer() {
         await setVisitorCount(+count);
       }
 
-      if (!isMyIp && !hasVisitorSession()) {
-        const visitor = await getVisitorDetails();
-        await setVisitorInfo(visitor);
-      }
+      const visitor = await getVisitorDetails();
+      await setVisitorInfo(visitor);
     }
 
     visitor();
