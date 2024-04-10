@@ -154,18 +154,6 @@ const experiences = [
     ],
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Premier Logistics Corporation',
-    icon: premier,
-    iconBg: '#E6DEDD',
-    date: 'Jul 2017 - Aug 2019',
-    points: [
-      'Delivered performance-driven and user-centric websites that met all business requirements.',
-      'Structured internal systems comprising order entry/management tools, conversion/revenue reporting and production workflow tracking.',
-      'Designed and implemented web applications, streamlining high-server traffic resource configuration and allocation.',
-    ],
-  },
-  {
     title: 'Blockchain Enthusiast',
     company_name: 'Codblocks',
     icon: codblocks,
@@ -178,6 +166,19 @@ const experiences = [
       'Projects available at https://github.com/orgs/CodBlocks/repositories',
     ],
   },
+  {
+    title: 'Full Stack Developer',
+    company_name: 'Premier Logistics Corporation',
+    icon: premier,
+    iconBg: '#E6DEDD',
+    date: 'Jul 2017 - Aug 2019',
+    points: [
+      'Delivered performance-driven and user-centric websites that met all business requirements.',
+      'Structured internal systems comprising order entry/management tools, conversion/revenue reporting and production workflow tracking.',
+      'Designed and implemented web applications, streamlining high-server traffic resource configuration and allocation.',
+    ],
+  },
+
   {
     title: 'Full Stack Developer',
     company_name: 'Codinoz Technologies',
