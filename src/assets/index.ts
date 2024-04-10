@@ -46,6 +46,7 @@ import spa from '../assets/company/spa.svg';
 import qubicle from '../assets/company/qubicle.png';
 import premier from '../assets/company/premier.png';
 import codinoz from '../assets/company/codinoz.png';
+import codblocks from '../assets/company/codblocks.png';
 import polosys from '../assets/company/polosys.png';
 
 export {
@@ -78,6 +79,7 @@ export {
   premier,
   neptune,
   codinoz,
+  codblocks,
   polosys,
   universe,
   earthWork,

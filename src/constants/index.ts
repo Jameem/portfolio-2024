@@ -39,6 +39,7 @@ import {
   amazon,
   instagram,
   git,
+  codblocks,
 } from '../assets';
 
 export const navLinks = [
@@ -70,12 +71,12 @@ const services = [
     icon: web,
   },
   {
-    title: 'React Specialist',
+    title: 'React & TypeScript Specialist',
     icon: mobile,
   },
 
   {
-    title: 'TypeScript Programmer',
+    title: 'Blockchain Application Developer',
     icon: creator,
   },
 ];
@@ -162,6 +163,19 @@ const experiences = [
       'Delivered performance-driven and user-centric websites that met all business requirements.',
       'Structured internal systems comprising order entry/management tools, conversion/revenue reporting and production workflow tracking.',
       'Designed and implemented web applications, streamlining high-server traffic resource configuration and allocation.',
+    ],
+  },
+  {
+    title: 'Blockchain Enthusiast',
+    company_name: 'Codblocks',
+    icon: codblocks,
+    iconBg: '#E6DEDD',
+    date: 'Dec 2018 - Jan 2021',
+    points: [
+      'Developed Solidity smart contracts on the Ethereum blockchain for various decentralized applications, ensuring security, efficiency, and functionality.',
+      'Implemented complex smart contract logic, including token standards (ERC20, ERC721).',
+      'Integrated Metamask wallet functionality into web applications, enabling users to interact securely with Ethereum blockchain networks directly from their browsers.',
+      'Projects available at https://github.com/orgs/CodBlocks/repositories',
     ],
   },
   {
