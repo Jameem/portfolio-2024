@@ -10,6 +10,7 @@ interface Visitor {
   longitude: string;
   region: string;
   ip: string;
+  date: Date;
 }
 
 export async function signIn() {
@@ -68,5 +69,14 @@ export async function getVisitorDetails(): Promise<Visitor> {
   const { city, country, country_name, latitude, longitude, region, ip } =
     visitor;
 
-  return { city, country, country_name, latitude, longitude, region, ip };
+  return {
+    city,
+    country,
+    country_name,
+    latitude,
+    longitude,
+    region,
+    ip,
+    date: new Date(),
+  };
 }
